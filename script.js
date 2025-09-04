@@ -5,6 +5,7 @@ pxlBtn.addEventListener("click", () => {
     let num = prompt("Enter number of pixels. Not more than 100:")
     num = Number(num)
 
+    cont.innerHTML = '';
     
      if (!isNaN(num) && num <= 100 && num > 0) {
       alert("You entered: " + num);
