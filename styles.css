@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primary: #03302c;
+  --color-secondary: #0bcca2;
+  --color-white:#FFFFFF;
+  --color-black: #000;
+  --color-grery0:#f8f8f8;
+  --color-grey1: #dbe7e8;
+  --color-grey2: #b2becd;
+  --color-grey3: #6c7983;
+  --color-grey4: #455256;
+  --color-grey5: #2a3435;
+  --color-grey6: #121b1b;
+  --br-sn-2:14px;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);  
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn{
+    background-color: var(--color-primary);
+    width: 100%;
+    margin-top: 9px;
+    padding: 9px;
+}
+button{
+    padding: 8px 15px 8px 15px;
+    background-color: var(--color-grey5);
+    color: var(--color-secondary);
+    border-radius: 8%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#container{
+    background-color: var(--color-secondary);
+    width: 900px;   
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    
+}
+
+#container div{
+    width: calc(90%/16);
+    height: calc(90%/16);
+    border: 2px solid var(--color-grey5);
+    box-sizing: border-box;
+    background-color: var(--color-grey2);
+    margin: 2px;
+}
+
+#container div:hover{
+    background-color: var(--color-grey1);
+}
